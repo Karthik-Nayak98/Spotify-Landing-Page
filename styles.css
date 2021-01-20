@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* Defining Variables */
+:root {
+  --main-color: #f3bf5a;
+  --secondary-color-dark: #1db954;
+  --secondary-color-light1: #58d661;
+  --secondary-color-light2: #2e782b;
+  --tertiary-color: #616467;
+  --nav-color: #614e25;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+}
+
+header nav {
+  background-color: var(--nav-color);
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+header .brand-logo img {
+  width: 130px;
+}
+
+.brand-logo {
+  margin-left: 5em;
+}
+header nav ul li {
+  list-style-type: none;
+  padding: 1.5em;
+}
+
+header nav ul {
+  display: flex;
+  font-weight: 500;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 4em;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+header nav ul li a:hover {
+  color: var(--secondary-color-light1);
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.base-content {
+  background-color: var(--main-color);
+  text-align: center;
+  height: 80vh;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-content h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.base-content button {
+  width: 300px;
+  text-transform: uppercase;
+  background-color: var(--secondary-color-dark);
+  font-size: 1.1em;
+  font-weight: 400;
+  padding: 1em 0;
+  border-radius: 25px;
+  outline: none;
+  flex-basis: 48px;
+}
+.base-content p::before {
+  content: '*';
+  font-size: 3px;
+}
