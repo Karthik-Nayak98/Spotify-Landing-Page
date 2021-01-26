@@ -12,58 +12,127 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="https://www.scdn.co/i/_global/favicon.png" />
     <!-- Stulesheet -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Spotify Clone</title>
   </head>
   <body>
     <header>
       <nav>
-        <span class="brand-logo">
-          <img src="/images/Spotify-logo.png" alt="Spotify Logo" />
-        </span>
-        <ul>
+        <div class="spotify">
+          <img src="/images/spotify.png" alt="Spotify Logo" />
+        </div>
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="navbar">
           <li><a href="#">Premium</a></li>
           <li><a href="#">Support</a></li>
           <li><a href="#">Download</a></li>
           <span> &nbsp; | &nbsp; </span>
-          <li>
-            <a href="#">
-              <span class="user">
-                <i class="far fa-user-circle fa-2x"></i>
-                &nbsp; Profile &nbsp;
-                <i class="fas fa-chevron-down"></i>
-              </span>
-            </a>
-          </li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Log In</a></li>
         </ul>
-        <!-- <span class="user-profile"> </span> -->
       </nav>
     </header>
 
     <main>
       <section class="base-content">
-        <h1>Go Premium. Be happy.</h1>
-        <button>start free trail</button>
-        <p>
-          <a href="#">Terms and conditions</a> apply. Open only to users who
-          haven't already tried Premium.
-        </p>
+        <h1>Listening is everything</h1>
+        <p>Millions of songs and podcasts. No credit card needed.</p>
+        <button>Get spotify free</button>
       </section>
-      <!-- <section class="music-content">
-        <h2>Looking for Music?</h2>
-        <p>Start listening to the best new releases.</p>
-        <button>Launch web player</button>
+
+      <section class="secondary">
+        <div class="spotify logo">
+          <img src="/images/spotify.png" alt="spotify logo" />
+        </div>
+        <div class="split">
+          <div>
+            <h3>company</h3>
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Jobs</a>
+              </li>
+              <li>
+                <a href="#">For the Record</a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>communities</h3>
+            <ul>
+              <li>
+                <a href="#"> For Artists </a>
+              </li>
+              <li>
+                <a href="#"> Developers </a>
+              </li>
+              <li>
+                <a href="#"> Advertising </a>
+              </li>
+              <li>
+                <a href="#"> Investors </a>
+              </li>
+              <li>
+                <a href="#"> Vendors </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>useful Links</h3>
+            <ul>
+              <li>
+                <a href="#">Support</a>
+              </li>
+              <li>
+                <a href="#">Web Player</a>
+              </li>
+              <li>
+                <a href="#">Free Mobile App</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social">
+          <div>
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div>
+            <i class="fab fa-twitter fa-2x"></i>
+          </div>
+          <div>
+            <i class="fa fa-facebook fa-2x"></i>
+          </div>
+        </div>
       </section>
-      <section class="music-gallery">
-        <img src="/images/nobody-is-listening.jpg" alt="nobody-is-listening" />
-        <img src="/images/bad-boy.jpg" alt="bad-boy" />
-      </section> -->
     </main>
 
-    <footer></footer>
+    <footer>
+      <div>
+        <ul>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacy Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">About Ads</a></li>
+        </ul>
+        <div class="copyright">
+          <i class="far fa-copyright"></i> 2021 Spotify AB
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
