@@ -81,7 +81,7 @@ nav {
 }
 
 .base-content {
-  height: 100vh;
+  height: 122vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,11 +228,90 @@ li {
 }
 
 @media all and (min-width: 991px) {
+  header nav {
+    max-width: 75em;
+    border: 2px solid red;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .navbar {
+    width: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar li {
+    flex-grow: 1;
+  }
+
+  .base-content h1 {
+    font-size: 9.75rem;
+    line-height: 166px;
+    font-weight: 500;
+    text-align: start;
+    margin-bottom: 0.2em;
+    max-width: 6.5em;
+    width: 90%;
+    border: 2px solid red;
+  }
+
+  .base-content p {
+    font-size: 1.125em;
+    line-height: 24px;
+  }
   .container {
     display: flex;
+    padding-top: 4em;
+    border: 2px solid red;
+    max-width: 75em;
+    justify-content: space-between;
+    margin: 0 auto;
   }
-  .split div {
+
+  .spotify img {
+    align-self: flex-start;
+    width: 150px;
+  }
+
+  .container > div {
+    flex-grow: 1;
+    /* border: 2px solid red; */
+  }
+
+  .container .split {
     display: flex;
-    justify-self: center;
+    flex-grow: 2;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .split div {
+    /* border: 2px solid red; */
+    flex-grow: 1;
+  }
+
+  .social {
+    width: 9em;
+    padding: 2em;
+    /* border: 2px solid red; */
+  }
+
+  .social div {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social div > i {
+    font-size: 30px;
+  }
+
+  footer div {
+    width: 120em;
+    max-width: 70rem;
   }
 }
