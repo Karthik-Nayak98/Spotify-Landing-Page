@@ -51,7 +51,6 @@ header {
 
 header nav {
   padding: 0.5em 1em;
-  /* border: 2px solid red; */
   max-width: 47em;
   margin: 0 auto;
 }
@@ -62,7 +61,6 @@ header nav {
   border: none;
   color: white;
   cursor: pointer;
-  /* padding-right: 0.9em; */
   font-size: 1.5em;
 }
 
@@ -118,10 +116,6 @@ nav {
   letter-spacing: 1px;
 }
 
-.secondary {
-  height: 120%;
-}
-
 .secondary .logo {
   padding: 2em 0.5em;
 }
@@ -135,7 +129,7 @@ nav {
   width: 220px;
   display: flex;
   justify-content: space-around;
-  /* padding-top: 3em */
+  padding-top: 8.5em;
 }
 
 .social div {
@@ -153,15 +147,14 @@ nav {
 }
 
 footer {
-  font-size: 0.6em;
+  font-size: 0.7em;
   padding: 3em 0;
 }
 
-footer div {
+footer > div {
   display: flex;
   justify-content: space-between;
   padding: 0 0.5em;
-  /* flex-wrap: wrap; */
 }
 
 footer div ul {
@@ -170,14 +163,11 @@ footer div ul {
   color: var(--clr-dark-500);
   width: 45em;
   flex-wrap: wrap;
-  border: 2px solid white;
 }
 
 footer div ul > * {
-  /* flex-basis: 2em; */
   color: var(--clr-dark-500);
   font-weight: 500;
-  /* flex-wrap: wrap; */
   text-align: center;
 }
 
@@ -198,6 +188,7 @@ h3 {
   text-transform: uppercase;
   font-size: 0.8em;
 }
+
 li {
   list-style: none;
   font-weight: 500;
@@ -208,6 +199,19 @@ li {
   header nav {
     max-width: 95%;
   }
+
+  .base-content {
+  }
+  .base-content h1 {
+    max-width: 6em;
+    font-size: 6em;
+    font-weight: 700;
+  }
+
+  .base-content p {
+    font-size: 1.125em;
+  }
+
   .secondary {
     display: flex;
     flex-flow: column;
@@ -230,7 +234,6 @@ li {
 @media all and (min-width: 991px) {
   header nav {
     max-width: 75em;
-    border: 2px solid red;
   }
 
   .hamburger {
@@ -257,17 +260,16 @@ li {
     margin-bottom: 0.2em;
     max-width: 6.5em;
     width: 90%;
-    border: 2px solid red;
   }
 
   .base-content p {
     font-size: 1.125em;
     line-height: 24px;
   }
+
   .container {
     display: flex;
     padding-top: 4em;
-    border: 2px solid red;
     max-width: 75em;
     justify-content: space-between;
     margin: 0 auto;
@@ -280,7 +282,6 @@ li {
 
   .container > div {
     flex-grow: 1;
-    /* border: 2px solid red; */
   }
 
   .container .split {
@@ -291,14 +292,12 @@ li {
   }
 
   .split div {
-    /* border: 2px solid red; */
     flex-grow: 1;
   }
 
   .social {
     width: 9em;
     padding: 2em;
-    /* border: 2px solid red; */
   }
 
   .social div {
@@ -310,8 +309,14 @@ li {
     font-size: 30px;
   }
 
-  footer div {
-    width: 120em;
-    max-width: 70rem;
+  .secondary {
+    padding: 3em 0;
+  }
+
+  footer > .container2 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8em;
+    max-width: 110em;
   }
 }
