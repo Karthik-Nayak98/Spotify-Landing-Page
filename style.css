@@ -79,7 +79,7 @@ nav {
 }
 
 .base-content {
-  height: 122vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,19 +253,17 @@ li {
   }
 
   .base-content {
+    padding-top: 8.5em;
   }
 
   .base-content h1 {
-    font-size: 9.75rem;
+    font-size: 8.5rem;
     line-height: 166px;
     font-weight: 700;
-    text-align: start;
-    border: 2px solid red;
     margin: 0 auto 0.2em;
-    /* max-width: 6.5em; */
-    margin-inline-start: 0px;
-    margin-inline-end: 0px; /* width: 95%; */
-    text-align: end;
+    padding-left: 1.8em;
+    max-width: 8em;
+    text-indent: -3.3em;
   }
 
   .base-content p {
@@ -275,7 +273,6 @@ li {
 
   .container {
     display: flex;
-    padding-top: 4em;
     max-width: 75em;
     justify-content: space-between;
     margin: 0 auto;
