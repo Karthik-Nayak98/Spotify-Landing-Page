@@ -26,7 +26,7 @@ li {
   font-family: var(--ff-primary);
 }
 
-li a:hover {
+*:hover {
   color: var(--clr-main);
 }
 
@@ -50,23 +50,29 @@ header {
 }
 
 header nav {
-  padding: 0.5em 1em;
+  /* padding: 0.5em 1em; */
   max-width: 47em;
   margin: 0 auto;
+  border: 2px solid red;
 }
 
 .hamburger {
   background: transparent;
   outline: none;
   border: none;
-  color: white;
+  color: var(--clr-light);
   cursor: pointer;
+  padding-right: 1em;
   font-size: 1.5em;
 }
 
 .spotify img {
   width: 100px;
-  padding: 0.5em;
+  padding: 1em;
+}
+
+.spotify-logo {
+  padding: 0 0.9em;
 }
 
 nav {
@@ -97,6 +103,7 @@ nav {
 
 .base-content p {
   font-size: 0.9em;
+  width: 80%;
 }
 
 .base-content button {
@@ -117,7 +124,7 @@ nav {
 }
 
 .secondary .logo {
-  padding: 2em 0.5em;
+  padding: 2em 0em;
 }
 
 .split div {
@@ -125,7 +132,7 @@ nav {
 }
 
 .social {
-  color: white;
+  color: var(--clr-light);
   width: 220px;
   display: flex;
   justify-content: space-around;
@@ -151,18 +158,19 @@ footer {
   padding: 3em 0;
 }
 
-footer > div {
+.container2 {
   display: flex;
   justify-content: space-between;
-  padding: 0 0.5em;
+  /* padding: 0 0.5em; */
 }
 
 footer div ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   color: var(--clr-dark-500);
   width: 45em;
   flex-wrap: wrap;
+  border: 2px solid blue;
 }
 
 footer div ul > * {
@@ -171,16 +179,8 @@ footer div ul > * {
   text-align: center;
 }
 
-footer div > li:hover {
-  color: var(--clr-main);
-}
-
 footer .copyright {
   align-self: center;
-}
-
-.social div i:hover {
-  color: var(--clr-main);
 }
 
 h3 {
@@ -195,13 +195,12 @@ li {
   padding: 0.6em 0;
 }
 
-@media all and (min-width: 768px) and (max-width: 990px) {
+@media all and (min-width: 768px) {
   header nav {
-    max-width: 95%;
+    /* max-width: 80%; */
+    max-width: 50em;
   }
 
-  .base-content {
-  }
   .base-content h1 {
     max-width: 6em;
     font-size: 6em;
@@ -215,13 +214,16 @@ li {
   .secondary {
     display: flex;
     flex-flow: column;
-    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0.2em;
   }
 
   .split {
     display: flex;
     flex-grow: 1;
   }
+
   .split div {
     flex-grow: 1;
   }
@@ -229,13 +231,25 @@ li {
   .social {
     padding-top: 7em;
   }
+
+  .container2,
+  .container {
+    border: 2px solid red;
+    /* width: 49em; */
+    padding: 0 0.9em;
+    min-width: 49rem;
+  }
+
+  .container2 {
+    margin: 0 auto;
+    max-width: 49rem;
+  }
 }
 
 @media all and (min-width: 991px) {
   header nav {
-    max-width: 75em;
+    max-width: 60em;
   }
-
   .hamburger {
     display: none;
   }
@@ -253,30 +267,16 @@ li {
   }
 
   .base-content {
-    padding-top: 8.5em;
-  }
-
-  .base-content h1 {
-    font-size: 8.5rem;
-    line-height: 166px;
-    font-weight: 700;
-    margin: 0 auto 0.2em;
-    padding-left: 1.8em;
-    max-width: 8em;
-    text-indent: -3.3em;
-  }
-
-  .base-content p {
-    font-size: 1.125em;
-    line-height: 24px;
+    height: 120vh;
+    /* width: 100vw; */
   }
 
   .container {
     display: flex;
-    max-width: 75em;
     justify-content: space-between;
-    margin: 0 auto;
     line-height: 24px;
+    width: 100%;
+    max-width: 60em;
   }
 
   .spotify img {
@@ -299,12 +299,12 @@ li {
   }
 
   .split div {
-    padding: 3em;
+    padding: 3em 1em;
   }
 
   .social {
     width: 9em;
-    padding: 2em;
+    padding: 3em 2em;
   }
 
   .social div {
@@ -320,10 +320,48 @@ li {
     padding: 3em 0;
   }
 
-  footer > .container2 {
+  .container2 {
     display: flex;
     justify-content: space-between;
-    margin-left: 8em;
-    max-width: 110em;
+    /* width: 100vw; */
+    max-width: 50em;
+  }
+
+  .copyright {
+    margin-left: 1em;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  header nav {
+    max-width: 75em;
+  }
+  .base-content h1 {
+    font-size: 9rem;
+    text-indent: -3.3em;
+    line-height: 166px;
+    font-weight: 700;
+    margin: 0 auto 0.2em;
+    padding-left: 1.8em;
+    max-width: 8em;
+  }
+
+  .container {
+    max-width: 75em;
+    margin: 0 auto;
+  }
+
+  .split div {
+    padding: 3em;
+  }
+
+  .social {
+    padding: 2em;
+  }
+
+  .container2 {
+    /* margin-left: 8em; */
+    width: 100vw;
+    max-width: 100em;
   }
 }
