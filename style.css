@@ -91,7 +91,9 @@ nav {
   align-items: center;
   justify-content: center;
   color: var(--clr-main);
+  background: url(/images/bursts-mobile.svg) no-repeat 100%;
   background-color: var(--clr-secondary);
+  /* background: url(https://scdn.co/i/home/lieVarients/bursts-mobile.svg); */
   text-align: center;
 }
 
@@ -133,7 +135,7 @@ nav {
 
 .social {
   color: var(--clr-light);
-  width: 220px;
+  width: 200px;
   display: flex;
   justify-content: space-around;
   padding-top: 8.5em;
@@ -154,33 +156,47 @@ nav {
 }
 
 footer {
-  font-size: 0.7em;
+  font-size: 0.6rem;
   padding: 3em 0;
 }
 
 .container2 {
   display: flex;
   justify-content: space-between;
+  border: 2px solid white;
+  /* flex-wrap: wrap; */
   /* padding: 0 0.5em; */
+}
+.container2 > div {
+  /* border: 2px solid blue; */
 }
 
 footer div ul {
   display: flex;
-  justify-content: space-between;
-  color: var(--clr-dark-500);
-  width: 45em;
+  justify-content: flex-start;
+  width: 30rem;
+  flex-shrink: 1;
   flex-wrap: wrap;
-  border: 2px solid blue;
+  color: var(--clr-dark-500);
+  /* border: 2px solid red; */
+  /* flex-basis: 300px; */
 }
 
 footer div ul > * {
   color: var(--clr-dark-500);
   font-weight: 500;
   text-align: center;
+  /* border: 2px solid green; */
+  min-width: 85px;
 }
 
 footer .copyright {
-  align-self: center;
+  /* align-self: center; */
+  padding-top: 0.8em;
+  min-width: 100px;
+  text-align: center;
+  /* flex-grow: 1; */
+  /* border: 2px solid red; */
 }
 
 h3 {
@@ -362,6 +378,6 @@ li {
   .container2 {
     /* margin-left: 8em; */
     width: 100vw;
-    max-width: 100em;
+    max-width: 125em;
   }
 }
