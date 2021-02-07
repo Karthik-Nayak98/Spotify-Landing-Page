@@ -53,7 +53,6 @@ header nav {
   /* padding: 0.5em 1em; */
   max-width: 47em;
   margin: 0 auto;
-  border: 2px solid red;
 }
 
 .hamburger {
@@ -91,9 +90,10 @@ nav {
   align-items: center;
   justify-content: center;
   color: var(--clr-main);
-  background: url(/images/bursts-mobile.svg) no-repeat 100%;
+  /* background: url(/images/bursts-mobile.svg) no-repeat; */
+  /* background-size: 90%; */
+  /* background-position: left -40% center; */
   background-color: var(--clr-secondary);
-  /* background: url(https://scdn.co/i/home/lieVarients/bursts-mobile.svg); */
   text-align: center;
 }
 
@@ -163,7 +163,6 @@ footer {
 .container2 {
   display: flex;
   justify-content: space-between;
-  border: 2px solid white;
   /* flex-wrap: wrap; */
   /* padding: 0 0.5em; */
 }
@@ -250,7 +249,6 @@ li {
 
   .container2,
   .container {
-    border: 2px solid red;
     /* width: 49em; */
     padding: 0 0.9em;
     min-width: 49rem;
