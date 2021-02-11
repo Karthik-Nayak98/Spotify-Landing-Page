@@ -1,8 +1,8 @@
 # Spotify-Landing-Page
 
-| Mobile View top                           | Mobile view bottom                      |
-| ----------------------------------------- | --------------------------------------- |
-| ![Mobile view1](./images/Screenshot1.png) | ![Mobile view2](images/Screenshot3.png) |
+| Mobile View top                           | Mobile view bottom                      | Mobile View Responsive                  |
+| ----------------------------------------- | --------------------------------------- | --------------------------------------- |
+| ![Mobile view1](./images/Screenshot1.png) | ![Mobile view2](images/Screenshot3.png) | ![Mobile view3](images/Screenshot5.png) |
 
 | Desktop View top                           | Desktop View bottom                      |
 | ------------------------------------------ | ---------------------------------------- |
