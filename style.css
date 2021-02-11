@@ -56,16 +56,28 @@ header nav {
 
 .hamburger {
   background: transparent;
-  outline: none;
   border: none;
+  outline: none;
+
   color: var(--clr-light);
   cursor: pointer;
   padding-right: 1em;
   font-size: 1.5em;
 }
 
+.hamburger .line1,
+.hamburger .line2,
+.hamburger .line3 {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px;
+}
+.vertical-line {
+  display: none;
+}
 .spotify img {
-  width: 100px;
+  width: 120px;
   padding: 1em;
 }
 
@@ -76,10 +88,6 @@ header nav {
 nav {
   display: flex;
   justify-content: space-between;
-}
-
-.navbar {
-  display: none;
 }
 
 .base-content {
@@ -198,6 +206,87 @@ li {
   padding: 0.6em 0;
 }
 
+/*  Responsive Navbar */
+@media all and (max-width: 991px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: absolute;
+    right: 0;
+    top: 6.5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 100vh;
+    width: 60vh;
+    opacity: 1;
+    color: var(--clr-light);
+    padding-left: 2.5em;
+    transform: translateX(100%);
+    transition: tranform 0.9s ease-in-out;
+  }
+  .navbar li {
+    padding: 5px;
+    flex-basis: 5px;
+    font-weight: 700;
+    font-size: 2.5em;
+  }
+
+  .navbar li.log-info {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+
+  .close {
+    position: relative;
+    right: 10px;
+    outline: none;
+  }
+  .fade {
+    opacity: 0;
+  }
+
+  .horizontal-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 2em 0.5em;
+  }
+
+  .spotify-lg img {
+    width: 110px;
+    position: absolute;
+    bottom: 4em;
+  }
+
+  .close .line1 {
+    transform: rotate(45deg) translate(-3px, 4px);
+    transition: 0.2s ease-in;
+  }
+  .close .line2 {
+    display: none;
+  }
+  .close .line3 {
+    transform: rotate(-45deg) translate(2px, -8px);
+    transition: 0.2s ease-in;
+  }
+
+  .nav-active {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media all and (min-width: 768px) {
   header nav {
     max-width: 50em;
@@ -250,7 +339,8 @@ li {
   header nav {
     max-width: 60em;
   }
-  .hamburger {
+  .hamburger,
+  .close {
     display: none;
   }
 
@@ -262,6 +352,9 @@ li {
     text-align: center;
   }
 
+  .vertical-line {
+    display: block;
+  }
   .navbar li {
     flex-grow: 1;
   }
@@ -328,6 +421,11 @@ li {
 
   .copyright {
     margin-left: 1em;
+  }
+
+  horizontal-line,
+  .spotify-lg img {
+    display: none;
   }
 }
 
