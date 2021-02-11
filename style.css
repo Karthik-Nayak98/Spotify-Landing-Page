@@ -336,6 +336,10 @@ li {
 }
 
 @media all and (min-width: 991px) {
+  body {
+    overflow-y: visible !important;
+  }
+
   header nav {
     max-width: 60em;
   }
