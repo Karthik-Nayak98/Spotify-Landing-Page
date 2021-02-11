@@ -7,3 +7,5 @@
 | Desktop View top                           | Desktop View bottom                      |
 | ------------------------------------------ | ---------------------------------------- |
 | ![Desktop view1](./images/Screenshot2.png) | ![Desktop view2](images/Screenshot4.png) |
+
+**<p align="center"> You can find the app live <a href="https://dummyspotify.netlify.app/">here</a> </p>**
