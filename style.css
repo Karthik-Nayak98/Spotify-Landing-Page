@@ -206,6 +206,12 @@ li {
   padding: 0.6em 0;
 }
 
+@media all and (max-width: 390px) {
+  /* .navbar {
+    padding-left:30px !important:
+    min-padding-right: 100px !important;
+  } */
+}
 /*  Responsive Navbar */
 @media all and (max-width: 991px) {
   body {
@@ -220,10 +226,10 @@ li {
     flex-direction: column;
     background-color: black;
     height: 100vh;
-    width: 60vh;
+    width: clamp(70vw, 100%, 230px);
     opacity: 1;
     color: var(--clr-light);
-    padding-left: 2.5em;
+    padding-left: max(3%, 10px);
     transform: translateX(100%);
     transition: tranform 0.9s ease-in-out;
   }
